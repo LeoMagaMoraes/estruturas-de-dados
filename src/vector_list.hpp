@@ -55,7 +55,7 @@ void VectorList<T>::pop_back()  {
 template <class T>
 void VectorList<T>::print() const {
     for(size_t i = 0; i < size(); i++){
-        std::cout << data[i] << " ";
+        std::cout<<" [ " << data[i] << " ] ";
     }
     std::cout << "\n";
 }

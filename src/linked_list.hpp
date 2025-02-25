@@ -53,8 +53,9 @@ void LinkedList<T>::insert(size_t index, const T &value) {
 template <class T>
 void LinkedList<T>::print() const {
     auto atual = head;
+    
     while (atual != nullptr) {
-        std::cout << atual->value << " -> "; // Changed data to value
+        std::cout << atual->value << "  ↔ "; // Changed data to value
         atual = atual->next;
     }
     std::cout << "NULL" << std::endl;
